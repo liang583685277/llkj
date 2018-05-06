@@ -47,8 +47,8 @@ aside > hgroup {
     text-align: center;
     font-size: 24px;
     font-family:"MicrosoftYaHei-Bold";
-    /*font-weight: bold;*/
     color: #1bf7ff;
+    opacity: 1;
     z-index: 99;
 }
 .media>div>div>span:nth-child(1){

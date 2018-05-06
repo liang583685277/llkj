@@ -20,29 +20,77 @@ aside > hgroup {
     font-size: 14px;
     color: #999999;
 }
-.jionusform{
+
+.jionusform {
     width: 900px;
-    height: 590px;
+    height: auto;
     padding: 70px 0;
     margin: 0 auto;
 }
-.jionusform>form>p{
+
+.jionusform > form > p {
+    position: relative;
     margin-bottom: 50px;
 }
-.jionusform input{
+
+.jionusform input {
     width: 400px;
     height: 50px;
     font-size: 16px;
-    color: #999999;
+    color: #282828;
     background-color: #f6f6f6;
-    border:none;
+    border: none;
     text-indent: 20px;
 }
-.jionusform input:nth-child(2){
+
+.jionusform input:nth-child(2) {
     margin-left: 100px;
 }
+
+.jionusform textarea {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 0;
+    left: 500px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #282828;
+    background-color: #f6f6f6;
+    border: none;
+    text-indent: 20px;
+    resize: none;
+}
+
 input:focus, textarea:focus {
-
     outline: none;
-
+}
+.jionusform span{
+    display: none;
+    position: absolute;
+    width: auto;
+    height: 16px;
+    padding-left: 22px;
+    top: 60px;
+    left: 0;
+    line-height: 16px;
+    color: #ff0000;
+    font-size: 12px;
+    text-align: center;
+}
+.jionusform span:before{
+    content:url("../images/jionus/cuowu1tixing.png");
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 1px;
+    left: 0;
+}
+#jionesbuttom {
+    width: 900px;
+    height: 50px;
+    background-color: #148EFF;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
 }
