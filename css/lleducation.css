@@ -1,0 +1,161 @@
+aside {
+    width: 1920px;
+    height: 240px;
+    background: url("../images/lleducation/banner.png") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+aside > p {
+    height: 39px;
+    line-height: 39px;
+    padding-top: 89px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+aside > hgroup {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #999999;
+}
+.articlea {
+    width: 1320px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+.artip {
+    margin: 66px 0;
+    font-size: 14px;
+    font-family: "MicrosoftYaHei";
+    color: #999999;
+}
+
+.artip > i {
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    background: url("../images/bit/jiantou.png") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.lledar{
+    position: relative;
+}
+.lledar>figure{
+    display: inline-block;
+    width: 575px;
+}
+.lledar>figure:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 740px;
+}
+.lledar>figure>img{
+    display: block;
+    width: 50px;
+    height: 40px;
+    margin: 0 auto;
+}
+.lledar>figure>figcaption{
+    margin-top:40px ;
+    text-align: center;
+}
+.lledar>figure>figcaption>p{
+    height: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #999999;
+}
+.course{
+    margin-top: 140px;
+}
+article>h1{
+    text-align: center;
+    font-size: 40px;
+    color: #1a1a1a;
+    font-weight: 100;
+}
+article>hgroup{
+    margin: 8px auto 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+}
+.course>fieldset{
+    position: relative;
+    display: inline-block;
+    width: 615px;
+    height: 55px;
+    margin-bottom: 60px;
+    background-color: #f6f6f6;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+}
+.course>fieldset>div{
+    line-height: 55px;
+}
+.courseps{
+    position: absolute;
+    top: -25px;
+    left: 34px;
+}
+.courseps>span:nth-child(1){
+    font-size: 30px;
+    color: #282828;
+}
+.courseps>span:nth-child(2){
+    font-size: 20px;
+    color: #666666;
+}
+.professor{
+    width: 1500px;
+    margin: -60px 0 0 -40px;
+}
+.professor>a{
+    display: inline-block;
+    margin: 60px 75px;
+}
+.professor>a>figure>div{
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.professor>a>figure>div>img{
+    width: 80px;
+    height: 80px;
+}
+.professor>a>figure>figcaption{
+    margin-top: 28px;
+    text-align: center;
+}
+.professor>a>figure>figcaption>p{
+    font-size: 16px;
+    color: #282828;
+}
+.professor>a>figure>figcaption>hgroup{
+    margin-top: 9px;
+    font-size: 12px;
+    color: #999999;
+}
+.courseleft{
+    margin-right: 80px;
+}
+.tel{
+    text-align: center;
+}
+.tel>h1{
+    font-size: 40px;
+    color: #1a1a1a;
+}
+.tel>hgroup{
+    font-size: 14px;
+    color: #999999;
+}

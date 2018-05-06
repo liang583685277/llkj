@@ -1,0 +1,94 @@
+aside {
+    width: 1920px;
+    height: 240px;
+    background: url("../images/bit/banner.png") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+aside > p {
+    height: 39px;
+    line-height: 39px;
+    padding-top: 89px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+aside > hgroup {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #999999;
+}
+
+.articlea {
+    width: 1920px;
+    height: 1000px;
+}
+
+.artip {
+    margin: 66px 0 66px 300px;
+    font-size: 14px;
+    font-family: "MicrosoftYaHei";
+    color: #999999;
+}
+
+.artip > i {
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    background: url("../images/bit/jiantou.png") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.articlea>div{
+    position: relative;
+}
+.articlea>div:nth-child(2){
+    width: 1050px;
+    height: 420px;
+    margin-left: 300px;
+}
+.articlea>div:nth-child(3){
+    margin-left: 570px;
+}
+.articlea>div:nth-child(3)>div:nth-child(2){
+    position: absolute;
+    width: 660px;
+    height: 420px;
+    top: 0;
+    left: 390px;
+}
+.jizhangtu{
+    position: absolute;
+    width: 370px;
+    height: auto;
+    top: 70px;
+    left: 680px;
+    text-align: right;
+}
+.anquansp{
+    position: absolute;
+    width: 370px;
+    height: auto;
+    top: 275px;
+    left: 0;
+}
+.anquansp>p,.jizhangtu>p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #282828;
+}
+.anquansp>.hr,.jizhangtu>.hr{
+    width: 370px;
+    height: 0;
+    margin-top: 20px;
+    border-bottom: solid #1a1a1a 2px;
+}
+.anquansp>span,.jizhangtu>span{
+    display: block;
+    margin-top: 19px;
+    font-size: 14px;
+    color: #999999;
+}
+
