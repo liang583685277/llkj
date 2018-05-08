@@ -80,18 +80,22 @@ footer>ul{
     margin: 0 auto;
 }
 footer>ul>li{
-    display: table-cell;
-    width: 13.3%;
+    /*display: table-cell;*/
+    float: left;
+    width: 20%;
 }
 footer>ul>li:nth-child(3){
-    width: 21%;
+    width: 30%;
 }
 footer>ul>li:nth-child(4){
-    width: 24%;
+    width: 30%;
 }
 footer figure{
     display: inline-block;
-    margin-right: 3%;
+    width: 40%;
+}
+footer figure:nth-child(3){
+    float: right;
 }
 footer>ul>li>h3{
     padding: 70px 0 28px 0;
@@ -107,6 +111,7 @@ footer>ul>li>p>span{
     color: #1BF7FF;
 }
 footer>p{
+    clear: both;
     width: 71.6%;
     min-width: 900px;
     margin: 0 auto;
@@ -118,6 +123,7 @@ footer figcaption{
     color: #999999;
 }
 footer img{
-    width: 130px;
-    height: 130px;
+    width: 100%;
+    min-width: 80%;
+    /*height: auto;*/
 }

@@ -52,7 +52,7 @@
     ];
     let aHtml="";
     jsjs.forEach(function (item) {
-        aHtml+="<a href=\"#\"><figure><div><img src=\""+item.url+"\" alt=\""+item.name+"\"></div><figcaption><p>"+item.name+"</p><hgroup>"+item.job+"</hgroup></figcaption></figure></a>"
+        aHtml+="<a><figure><div><img src=\""+item.url+"\" alt=\""+item.name+"\"></div><figcaption><p>"+item.name+"</p><hgroup>"+item.job+"</hgroup></figcaption></figure></a>"
     })
     $(".professor:eq(0)").append(aHtml);
 })()

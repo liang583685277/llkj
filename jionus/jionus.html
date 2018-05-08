@@ -35,22 +35,22 @@
 <article class="jionusform">
     <form autocomplete="on" novalidate="">
         <p>
-            <input type="text" name="name" required pattern="[\u4e00-\u9fa5]{2,}" oninvalid="validatelt(this,'真实姓名必须是中文，且长度不小于2')" placeholder="姓名"><input type="text" name="theme" required placeholder="主题"><span>请输入正确的姓名！</span>
+            <input type="text" name="name" onpaste="keYup(this);" onchange="keYup(this);" placeholder="姓名"><input type="text" name="theme" required placeholder="主题"><span>请输入正确的姓名！</span>
         </p>
         <p>
             <input type="text" name="email" required placeholder="邮箱"><textarea name="content" maxlength="2000" placeholder="内容"></textarea><span>请输入正确的邮箱！</span>
         </p>
         <p>
-            <input type="text" name="tel" required pattern="1[34578]\d{9}$"  oninvalid="validatelt(this,'电话号只能是11位的整数')" placeholder="电话"><span>请输入正确的手机号码！</span>
+            <input type="text" name="tel" oninvalid="setCustomValidity(this,'电话号只能是11位的整数')" placeholder="电话"><span>请输入正确的手机号码！</span>
         </p>
         <p>
             <input type="text" name="firm" required placeholder="公司">
         </p>
-        <p>
-            <input id="jionesbuttom" type="submit" value="立即发送">
-        </p>
-    </form>
 
+    </form>
+    <p>
+        <input id="jionesbuttom" type="button" onclick="fromSubmit()" value="立即发送">
+    </p>
 </article>
 
 <footer>
@@ -86,17 +86,37 @@
     <p>备案号：蜀ICP备17040097号&ensp;&nbsp;Copyright&ensp;©&ensp;2016&ensp;-&ensp;现在&ensp;cdymtz.com&ensp;版权所有</p>
 </footer>
 <script>
-    //对悬浮窗的设置
-    function validatelt(inputelement,err){
-        if(inputelement.validity.patternMismatch){
-            inputelement.setCustomValidity(err);
-            //错误后就清空，不过执行顺序有点问题就不要了
-//                if(confirm("输入有误,是否清空此项？")){
-//                    inputelement.value="";
-//                }
+    const formValdation=function () {}
+    formValdation.prototype={
+        status:0,//表单状态
+        name:"[\u4e00-\u9fa5]{2,}",
+        email:"",
+        tel:"p1[34578]\\d{9}$",
+        isName:function (str) {
+            let rel=/^[\u4e00-\u9fa5]{2,4}$/;
+            return rel.test(str);
+            console.log(rel.test(str));
+            // arr.match(this.name);
+        }
+    }
+    var jionusFrom=new formValdation();
+    function keYup(e){
+        console.log(e.value);
+        e.style.color="#282828";
+        let oldval=e.value;
+        e.value=oldval.replace(/\s+/g,"");
+        console.log(!jionusFrom.isName(oldval));
+        if (!jionusFrom.isName(oldval)) {
+            e.style.color="red";
         }else{
-            inputelement.setCustomValidity("");
-            return true;
+
+        }
+    }
+    //replace(/\s+/g,"");
+    function fromSubmit(){
+        let fromZt=jionusFrom.status;
+        if (fromZt==1){
+            console.log("验证通过，继续执行");
         }
     }
 </script>
