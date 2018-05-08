@@ -28,14 +28,14 @@
     ];
     let divHtml='';
     divjson.forEach(function (item) {
-        divHtml+="<div><img src=\""+item.url+"\" width=\"380px\" height=\"280px\" alt=\"\"><div><span>"+item.text+"</span><span>"+item.texttwo+"</span></div></div>"
+        divHtml+="<div><img src=\""+item.url+"\" width=\"100%\" height=\"100%\" alt=\"\"><div><span>"+item.text+"</span><span>"+item.texttwo+"</span></div></div>"
     })
     $(".media:eq(0)").append(divHtml);
 })();
 $(document).ready(function () {
     $(".media>div").hover(function () {
-        $(this).find("div").css({top:0});
+        $(this).find("div").show();
     },function () {
-        $(this).find("div").css({top:"280px"});
+        $(this).find("div").hide();
     })
 })

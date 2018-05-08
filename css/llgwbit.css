@@ -1,33 +1,45 @@
 aside {
-    width: 1920px;
-    height: 240px;
-    background: url("../images/bit/banner.png") no-repeat center;
-    -webkit-background-size: cover;
-    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-width: 1024px;
+}
+aside>img{
+    width: 100%;
+    min-width: 1024px;
+}
+.headertext{
+    position: absolute;
+    width: auto;
+    height: 60px;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin-top: -30px;
     text-align: center;
 }
-
-aside > p {
+.headertext > p {
     height: 39px;
     line-height: 39px;
-    padding-top: 89px;
+    top: 37%;
     font-size: 40px;
     color: #ffffff;
 }
 
-aside > hgroup {
-    margin-top: 50px;
+.headertext > hgroup {
+    margin-top: 9px;
     font-size: 14px;
     color: #999999;
 }
 
 .articlea {
-    width: 1920px;
-    height: 1000px;
+    width: 69.5%;
+    min-width: 1024px;
+    height: auto;
+    margin: 0 auto 70px;
 }
 
 .artip {
-    margin: 66px 0 66px 300px;
+    margin: 66px 0;
     font-size: 14px;
     font-family: "MicrosoftYaHei";
     color: #999999;
@@ -43,36 +55,42 @@ aside > hgroup {
 }
 .articlea>div{
     position: relative;
+    width: 100%;
+    min-width: 1024px;
+    height: auto;
 }
-.articlea>div:nth-child(2){
-    width: 1050px;
-    height: 420px;
-    margin-left: 300px;
+.articlea>div>img{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    min-width: 350px;
 }
-.articlea>div:nth-child(3){
-    margin-left: 570px;
+
+.articlea>div{
+    display: inline-block;
 }
-.articlea>div:nth-child(3)>div:nth-child(2){
-    position: absolute;
-    width: 660px;
-    height: 420px;
-    top: 0;
-    left: 390px;
+.articlea>div:nth-child(2)>div{
+    display: inline-block;
+    float: left;
+}
+.articlea>div:nth-child(3)>div{
+
+}
+.articlea>div:nth-child(3)>img{
+    float: right;
+    clear: both;
 }
 .jizhangtu{
-    position: absolute;
     width: 370px;
     height: auto;
-    top: 70px;
-    left: 680px;
+    margin: 5% 0 0 1%;
     text-align: right;
 }
 .anquansp{
-    position: absolute;
+    float: right;
     width: 370px;
     height: auto;
-    top: 275px;
-    left: 0;
+    margin: 22% 1% 0 0;
 }
 .anquansp>p,.jizhangtu>p{
     font-size: 20px;

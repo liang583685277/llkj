@@ -1,26 +1,38 @@
 aside {
-    width: 1920px;
-    height: 240px;
-    background: url("../images/lleducation/banner.png") no-repeat center;
-    -webkit-background-size: cover;
-    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-width: 1024px;
+}
+aside>img{
+    width: 100%;
+    min-width: 1024px;
+}
+.headertext{
+    position: absolute;
+    width: auto;
+    height: 60px;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin-top: -30px;
     text-align: center;
 }
-aside > p {
+.headertext > p {
     height: 39px;
     line-height: 39px;
-    padding-top: 89px;
+    top: 37%;
     font-size: 40px;
     color: #ffffff;
 }
 
-aside > hgroup {
-    margin-top: 50px;
+.headertext > hgroup {
+    margin-top: 9px;
     font-size: 14px;
     color: #999999;
 }
 .articlea {
-    width: 1320px;
+    width: 68%;
+    min-width: 1024px;
     height: auto;
     margin: 0 auto;
     padding-bottom: 70px;
@@ -42,21 +54,26 @@ aside > hgroup {
 }
 .lledar{
     position: relative;
+    min-width: 1024px;
 }
 .lledar>figure{
     display: inline-block;
-    width: 575px;
+    width: 45%;
 }
 .lledar>figure:nth-child(2){
-    position: absolute;
-    top: 0;
-    left: 740px;
+    margin-left: 9%;
 }
-.lledar>figure>img{
+.lledar>figure>span{
     display: block;
-    width: 50px;
-    height: 40px;
     margin: 0 auto;
+    font-size: 40px;
+    text-align: center;
+}
+.icon-jianjie{
+    color: #148eff;
+}
+.icon-yuanjing{
+    color: #01c5cc;
 }
 .lledar>figure>figcaption{
     margin-top:40px ;
@@ -65,12 +82,14 @@ aside > hgroup {
 .lledar>figure>figcaption>p{
     height: 30px;
     line-height: 30px;
-    margin-top: 20px;
+    margin: 20px auto 0;
     font-size: 12px;
     color: #999999;
+    text-indent: 24px;
 }
 .course{
     margin-top: 140px;
+    width: 100%;
 }
 article>h1{
     text-align: center;
@@ -87,7 +106,7 @@ article>hgroup{
 .course>fieldset{
     position: relative;
     display: inline-block;
-    width: 615px;
+    width: 45%;
     height: 55px;
     margin-bottom: 60px;
     background-color: #f6f6f6;
@@ -113,12 +132,12 @@ article>hgroup{
     color: #666666;
 }
 .professor{
-    width: 1500px;
-    margin: -60px 0 0 -40px;
+    width: 100%;
+    min-width: 1024px;
 }
 .professor>a{
     display: inline-block;
-    margin: 60px 75px;
+    margin: 0 60px 50px;
 }
 .professor>a>figure>div{
     width: 80px;

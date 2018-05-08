@@ -2,18 +2,13 @@ body {
     font-family: "MicrosoftYaHei";
     height: 100%;
 }
-/*html{*/
-    /*overflow: hidden;*/
-/*}*/
 body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
-::-webkit-scrollbar{
-    display:none;
-}
-/*body{*/
-    /*overflow-x: hidden;*/
+/*::-webkit-scrollbar{*/
+    /*display:none;*/
 /*}*/
+
 ol, ul, li {
     list-style: none;
 }
@@ -28,9 +23,6 @@ img {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.logo {
-    padding: 25px 0 0 200px;
-}
 a,button,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
 a{
     text-decoration: none;
@@ -38,24 +30,30 @@ a{
 }
 header{
     position: relative;
-    width: 1920px;
+    overflow: hidden;
+    width: 100%;
+    min-width: 1024px;
     height: 76px;
     background-color: #272a2d;
 }
 .logo{
-    padding: 25px 0 25px 200px;
+    display: inline-block;
+    padding: 25px 0 25px 10%;
 }
 nav{
     display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 1041px;
+    float: right;
+    width: 45%;
+    margin-top: 0;
 }
 nav>a{
     display: inline-block;
     padding: 31px 0 13px 0;
-    margin: 0 35px;
+    margin: 0 4%;
     font-size: 14px;
+}
+nav>a:last-child{
+    margin-right: 0;
 }
 a{
     text-decoration: none;
@@ -68,30 +66,32 @@ a{
 
 footer{
     position: relative;
-    width:1920px;
+    clear: both;
+    width:100%;
+    min-width: 1024px;
     height:359px;
-    padding-left: 300px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     background-color:#272A2D;
     color: #ffffff;
     overflow: hidden;
 }
-
+footer>ul{
+    width: 71.6%;
+    min-width: 900px;
+    margin: 0 auto;
+}
 footer>ul>li{
     display: table-cell;
-    width: 256px;
+    width: 13.3%;
 }
 footer>ul>li:nth-child(3){
-    width: 424px;
+    width: 21%;
 }
 footer>ul>li:nth-child(4){
-    width: 450px;
+    width: 24%;
 }
 footer figure{
     display: inline-block;
-    margin-right: 50px;
+    margin-right: 3%;
 }
 footer>ul>li>h3{
     padding: 70px 0 28px 0;
@@ -107,15 +107,17 @@ footer>ul>li>p>span{
     color: #1BF7FF;
 }
 footer>p{
-    position: absolute;
-    width: auto;
-    height: auto;
-    top: 275px;
-    left: 300px;
+    width: 71.6%;
+    min-width: 900px;
+    margin: 0 auto;
     color: #999999;
     font-size: 12px;
 }
 footer figcaption{
     font-size: 14px;
     color: #999999;
+}
+footer img{
+    width: 130px;
+    height: 130px;
 }

@@ -1,37 +1,47 @@
-aside{
-    width:1920px;
-    padding: 0;
-    margin: 0;
+body{
+    background-color: #272a2d;
 }
-aside:nth-child(2){
-    height: 949px;
+aside{
+    overflow: hidden;
+    width:100%;
+    min-width: 1024px;
+    height: auto;
+    border: none;
 }
 aside>img{
-    width:1920px;
-    height: 949px;
+    width:100%;
+    height: 100%;
 }
 
 .contenta {
     clear: both;
     position: relative;
-    padding: 70px 300px;
-    width: 1920px;
+    padding: 70px 0;
+    width: 100%;
+    min-width: 1024px;
     height: 430px;
     background-color: #272a2d;
 }
 
 .contentadiv {
-    position: relative;
-    width: 1320px;
-    height: 290px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    width: 53%;
+    min-width: 900px;
+    height: 340px;
+    min-height: 300px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    flex-basis: 31%;
 }
 
 .contentadiv > div {
-    position: absolute;
-    display: inline-block;
-    width: 380px;
-    height: 120px;
-    padding: 27px 31px;
+    position: relative;
+    width: 31%;
+    height: 35%;
     font-size: 16px;
     font-family: "MicrosoftYaHei";
     color: rgba(255, 255, 255, 1);
@@ -40,40 +50,30 @@ aside>img{
 }
 
 .contentadiv > div:nth-child(1) {
-    top: 0;
-    left: 0;
-    text-align: left;
+    padding: 30px 0 0 31px;
 }
 
 .contentadiv > div:nth-child(2) {
-    top: 0;
-    left: 470px;
+    padding: 30px 0;
     text-align: center;
 }
 
 .contentadiv > div:nth-child(3) {
-    top: 0;
-    left: 940px;
+    padding: 30px 31px 0 0;
     text-align: right;
 }
 
 .contentadiv > div:nth-child(4) {
-    padding: 70px 0 0 26px;
-    top: 170px;
-    left: 0;
+    padding: 70px 0 0 31px;
 }
 
 .contentadiv > div:nth-child(5) {
     padding: 70px 0 0 0;
-    top: 170px;
-    left: 470px;
     text-align: center;
 }
 
 .contentadiv > div:nth-child(6) {
-    padding: 70px 26px 0 0;
-    top: 170px;
-    left: 940px;
+    padding: 70px 31px 0 0;
     text-align: right;
 }
 
@@ -81,54 +81,62 @@ aside>img{
     position: absolute;
     width: 44px;
     height: 44px;
-    top: -1px;
-    left: 0;
     border: solid #1bf7ff 4px;
 }
 
 .contentadiv > div:nth-child(1) > div {
+    top: -1px;
+    left: -1px;
     border-right: none;
     border-bottom: none;
 }
 
 .contentadiv > div:nth-child(2) > div {
-    left: 168px;
+    top: -1px;
+    left: 0;
+    right: 0;
+    margin: auto;
     border-left: none;
     border-right: none;
     border-bottom: none;
 }
 
 .contentadiv > div:nth-child(3) > div {
-    left: 336px;
+    top: -1px;
+    right: -1px;
     border-left: none;
     border-bottom: none;
 }
 
 .contentadiv > div:nth-child(4) > div {
-    top: 74px;
+    left: -1px;
+    bottom: -1px;
     border-right: none;
     border-top: none;
 }
 
 .contentadiv > div:nth-child(5) > div {
-    top: 74px;
-    left: 168px;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    margin: auto;
     border-left: none;
     border-right: none;
     border-top: none;
 }
 
 .contentadiv > div:nth-child(6) > div {
-    top: 74px;
-    left: 336px;
+    bottom: -1px;
+    right: -1px;
     border-left: none;
     border-top: none;
 }
 
 .contentbit {
     position: relative;
-    width: 1920px;
-    height: 926px;
+    width: 100%;
+    min-width: 1024px;
+    height: auto;
     padding-top: 71px;
     background-color: #272a2d;
 }
@@ -166,28 +174,33 @@ aside>img{
 
 .bitimgcon {
     position: relative;
-    width: 1920px;
-    height: 551px;
+    width: 100%;
+    min-width: 1024px;
     margin-top: 70px;
+    margin-bottom: 70px;
 }
-
+.bitimgcon>div{
+    display: inline-block;
+}
 .bitimg {
-    width: 905px;
-    height: 551px;
-    background: url("../images/index/jifentu.png") no-repeat center;
-    -webkit-background-size: cover;
-    background-size: cover;
+    width: 47%;
+    min-width: 481px;
+    height: auto;
+}
+.bitimg img{
+    width: 100%;
+    height: auto;
 }
 
 .bittext {
-    position: absolute;
-    width: 1000px;
-    height: 479px;
+    float: right;
+    width: 49%;
+    min-width: 501px;
     top: 70px;
     left: 975px;
 }
 
-h1 {
+.bittext>h1 {
     font-family: "MicrosoftYaHei-Bold";
     font-size: 34px;
     color: #ffffff;
@@ -196,13 +209,14 @@ h1 {
 .hbr {
     width: 140px;
     height: 0;
-    margin-top: 30px;
+    margin-top: 5%;
     border-bottom: solid #1bf7ff 4px;
 }
 
 .bittext > article {
-    width: 631px;
-    margin-top: 50px;
+    width: 69%;
+    min-width: 504px;
+    margin-top: 9%;
     font-size: 14px;
     color: #ffffff;
 }
@@ -210,7 +224,7 @@ h1 {
 .bittexta {
     width: 140px;
     height: 36px;
-    margin-top: 151px;
+    margin-top: 10%;
     line-height: 36px;
     text-align: center;
     color: #ffffff;
@@ -226,7 +240,7 @@ h1 {
 }
 
 .bittexul {
-    margin-top: 49px;
+    margin-top: 6%;
     font-size: 14px;
     color: #ffffff;
 }
@@ -238,7 +252,7 @@ h1 {
 
 .news {
     position: relative;
-    width: 1920px;
+    width: 100%;
     height: 350px;
     padding-top: 70px;
     -webkit-box-sizing: border-box;
