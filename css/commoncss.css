@@ -69,7 +69,6 @@ footer{
     clear: both;
     width:100%;
     min-width: 1024px;
-    height:359px;
     background-color:#272A2D;
     color: #ffffff;
     overflow: hidden;
@@ -114,7 +113,7 @@ footer>p{
     clear: both;
     width: 71.6%;
     min-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto 3%;
     color: #999999;
     font-size: 12px;
 }
