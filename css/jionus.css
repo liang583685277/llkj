@@ -46,11 +46,11 @@ aside>img{
 .jionusform input {
     width: 400px;
     height: 50px;
+    padding: 0 0 0 20px;
     font-size: 16px;
     color: #282828;
     background-color: #f6f6f6;
     border: none;
-    text-indent: 20px;
 }
 
 .jionusform input:nth-child(2) {
@@ -61,21 +61,21 @@ aside>img{
     position: absolute;
     width: 400px;
     height: 250px;
+    padding: 17px 0 0 20px;
     top: 0;
     left: 500px;
-    line-height: 50px;
     font-size: 16px;
     color: #282828;
     background-color: #f6f6f6;
     border: none;
-    text-indent: 20px;
     resize: none;
 }
 
 input:focus, textarea:focus {
     outline: none;
 }
-.jionusform span{
+
+#jionesform span{
     display: none;
     position: absolute;
     width: auto;
@@ -86,16 +86,26 @@ input:focus, textarea:focus {
     line-height: 16px;
     color: #ff0000;
     font-size: 12px;
-    text-align: center;
 }
 .jionusform span:before{
     content:url("../images/jionus/cuowu1tixing.png");
     position: absolute;
     width: 16px;
     height: 16px;
-    top: 1px;
+    top: 0;
     left: 0;
 }
+#jionesform>p:nth-child(1)>span:nth-child(4){
+    display: none;
+    top: 60px;
+    left: 500px;
+}
+#jionesform>p:nth-child(2)>span:nth-child(4){
+    display: none;
+    top: 260px;
+    left: 500px;
+}
+
 #jionesbuttom {
     width: 900px;
     height: 50px;
