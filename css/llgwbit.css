@@ -110,3 +110,71 @@ aside>img{
     color: #999999;
 }
 
+@media only screen and (max-width: 800px) {
+    aside {
+        min-width: 0;
+        border-top: solid #272a2d 71px;
+    }
+    aside>img {
+        min-width: 0;
+    }
+    .headertext {
+        height: 40px;
+        margin-top: -20px;
+    }
+    .headertext > p {
+        height: 20px;
+        line-height: 20px;
+        top: 37%;
+        font-size: 20px;
+        color: #ffffff;
+    }
+    .headertext > hgroup {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .articlea {
+        width: 80%;
+        min-width: 0;
+        height: auto;
+        margin: 0 auto 50px;
+    }
+    .artip {
+        margin: 40px 0;
+        font-size: 14px;
+        font-family: "MicrosoftYaHei";
+        color: #999999;
+    }
+    .articlea>div {
+        position: relative;
+        width: 100%;
+        min-width: 0;
+        height: auto;
+    }
+    .articlea>div>img {
+        display: block;
+        float: none;
+        width: 100%;
+        min-width: 0;
+    }
+    .articlea>div:nth-child(2)>div {
+        display: block;
+        float: right;
+        margin-bottom: 40px;
+    }
+    .articlea>div:nth-child(3)>div {
+        float: left;
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .headertext > hgroup {
+        margin-top: 0;
+    }
+    .jizhangtu,.anquansp {
+        width: 100%;
+    }
+    .anquansp>.hr, .jizhangtu>.hr {
+        width: 100%;
+    }
+}

@@ -87,3 +87,58 @@ aside>img{
     font-weight: bold;
     color: #282828;
 }
+@media only screen and (max-width: 800px){
+    aside {
+        position: relative;
+        width: 100%;
+        min-width: 0;
+        border-top: solid #272A2D 71px;
+    }
+    aside>img {
+        min-width: 0;
+    }
+    .headertext {
+        position: absolute;
+        width: auto;
+        height: 40px;
+        top: 50%;
+        right: 0;
+        left: 0;
+        margin-top: -20px;
+        text-align: center;
+    }
+    .headertext > p {
+        height: 20px;
+        line-height: 20px;
+        top: 37%;
+        font-size: 20px;
+        color: #ffffff;
+    }
+    .headertext > hgroup {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .articlea {
+        width: 80%;
+        min-width: 0;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    .artip {
+        width: 100%;
+        min-width: 0;
+        margin: 40px auto;
+    }
+    .yftext {
+        width: 100%;
+        min-width: 0;
+    }
+    .yftext>figure>img{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .headertext > hgroup {
+        margin-top: 0;
+    }
+}

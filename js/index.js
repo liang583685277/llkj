@@ -7,4 +7,8 @@ $(document).ready(function () {
 
         window.location.href=urlHref[index];
     });
+    $(".bitulli:eq(0)>li").click(function () {
+        $(".bitulli:eq(0)>li").removeClass("selectnava");
+        $(this).addClass("selectnava");
+    });
 });

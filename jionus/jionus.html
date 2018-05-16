@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>联系我们</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="keywords" content="关键词">
     <meta name="description" content="描述">
     <meta name="author" content="liang583685277">
     <link rel="stylesheet" href="../css/commoncss.css">
+    <link rel="stylesheet" href="../common/style.css">
     <link rel="stylesheet" href="../css/jionus.css">
     <script src="../js/jquery-3.1.0.js"></script>
 </head>
@@ -17,11 +19,12 @@
             <img src="../common/images/longlianLOGO.png" alt="龙链科技" width="150" height="26">
         </a>
     </div>
+    <a id="headerIconNav" class="header-icon"><span class="header-icon-color icon-gather"></span></a>
     <nav>
         <a href="../index.html">首页</a>
         <a href="../media/media.html">媒体报道</a>
         <a href="./jionus.html" class="selectnava">联系我们</a>
-        <a href="#">云梦农场</a>
+        <a href="http://www.cdymtz.cn/">云梦农场</a>
         <a href="#">二师兄肉业</a>
     </nav>
 </header>
@@ -35,10 +38,12 @@
 <article class="jionusform">
     <form autocomplete="on" novalidate="" id="jionesform">
         <p>
-            <input type="text" name="username" placeholder="姓名"><input type="text" name="theme" placeholder="主题"><span>请输入正确的姓名！</span><span>请输入主题！</span>
+            <input type="text" name="username" placeholder="姓名">
+            <span>请输入正确的姓名！</span>
         </p>
         <p>
-            <input type="text" name="email" placeholder="邮箱"><textarea name="content" rows="6" maxlength="2000" placeholder="内容"></textarea><span>请输入正确的邮箱！</span><span>请输入内容信息！</span>
+            <input type="text" name="email" placeholder="邮箱">
+            <span>请输入正确的邮箱！</span>
         </p>
         <p>
             <input type="text" name="tel" placeholder="电话"><span>请输入正确的手机号码！</span>
@@ -47,7 +52,14 @@
             <input type="text" name="firm" placeholder="公司">
             <span>请输入公司名称！</span>
         </p>
-
+        <p class="p_input_theme">
+            <input type="text" name="theme" placeholder="主题">
+            <span>请输入主题！</span>
+        </p>
+        <p>
+            <textarea name="content" rows="6" maxlength="2000" placeholder="内容"></textarea>
+            <span>请输入内容信息！</span>
+        </p>
     </form>
     <p>
         <input id="jionesbuttom" type="button" value="立即发送">
@@ -69,8 +81,8 @@
         </li>
         <li>
             <h3>联系方式</h3>
-            <p>电话：<span>17380130659</span></p>
-            <p>邮箱：<span>longliankj@mybitzhu.com</span></p>
+            <p>电话：<a href="tel:17380130659">17380130659</a></p>
+            <p>邮箱：<a href="mailto:longliankj@mybitzhu.com">longliankj@mybitzhu.com</a></p>
         </li>
         <li>
             <h3>公众号</h3>
@@ -154,10 +166,10 @@
             }if (name=='theme'){
                 if (thisVal!=''){
                     jionusFrom.theme=1;
-                    $(this).parent("p").find("span:eq(1)").hide();
+                    $(this).parent("p").find("span:eq(0)").hide();
                 } else {
                     jionusFrom.theme=0;
-                    $(this).parent("p").find("span:eq(1)").show();
+                    $(this).parent("p").find("span:eq(0)").show();
                 }
             }
 
@@ -166,10 +178,10 @@
             let text=$(this).val().replace(/\s+/g,"");
             if (text!=''){
                 jionusFrom.content=1;
-                $(this).parent("p").find("span:eq(1)").hide();
+                $(this).parent("p").find("span:eq(0)").hide();
             } else {
                 jionusFrom.content=0;
-                $(this).parent("p").find("span:eq(1)").show();
+                $(this).parent("p").find("span:eq(0)").show();
             }
         });
         $("#jionesbuttom").click(function () {
@@ -186,17 +198,19 @@
                 $("#jionesform input[name='firm']:eq(0)").parent().find('span:eq(0)').show();
             }
             if (jionusFrom.theme==0){
-                $("#jionesform input[name='theme']:eq(0)").parent().find('span:eq(1)').show();
+                $("#jionesform input[name='theme']:eq(0)").parent().find('span:eq(0)').show();
             }
             if (jionusFrom.content==0){
-                $("#jionesform textarea[name='content']:eq(0)").parent().find('span:eq(1)').show();
+                $("#jionesform textarea[name='content']:eq(0)").parent().find('span:eq(0)').show();
             }
             if (jionusFrom.username==1&&jionusFrom.tel==1&&jionusFrom.email==1&&jionusFrom.firm==1&&jionusFrom.theme==1&&jionusFrom.content==1){
                 console.log("验证通过，继续操作");
+                alert(1);
             }
         });
     });
 
 </script>
+<script type="text/javascript" src="../js/commonjs.js"></script>
 </body>
 </html>

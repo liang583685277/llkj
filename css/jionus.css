@@ -3,11 +3,13 @@ aside {
     width: 100%;
     min-width: 1024px;
 }
-aside>img{
+
+aside > img {
     width: 100%;
     min-width: 1024px;
 }
-.headertext{
+
+.headertext {
     position: absolute;
     width: auto;
     height: 60px;
@@ -17,6 +19,7 @@ aside>img{
     margin-top: -30px;
     text-align: center;
 }
+
 .headertext > p {
     height: 39px;
     line-height: 39px;
@@ -58,12 +61,9 @@ aside>img{
 }
 
 .jionusform textarea {
-    position: absolute;
     width: 400px;
     height: 250px;
-    padding: 17px 0 0 20px;
-    top: 0;
-    left: 500px;
+    padding: 17px 20px 0 ;
     font-size: 16px;
     color: #282828;
     background-color: #f6f6f6;
@@ -74,43 +74,119 @@ aside>img{
 input:focus, textarea:focus {
     outline: none;
 }
-
-#jionesform span{
+#jionesform{
+    position: relative;
+}
+#jionesform span {
     display: none;
     position: absolute;
     width: auto;
     height: 16px;
     padding-left: 22px;
-    top: 60px;
     left: 0;
+    bottom: -26px;
     line-height: 16px;
     color: #ff0000;
     font-size: 12px;
 }
-.jionusform span:before{
-    content:url("../images/jionus/cuowu1tixing.png");
+
+.jionusform span:before {
+    content: url("../images/jionus/cuowu1tixing.png");
     position: absolute;
     width: 16px;
     height: 16px;
     top: 0;
     left: 0;
 }
-#jionesform>p:nth-child(1)>span:nth-child(4){
-    display: none;
-    top: 60px;
-    left: 500px;
+.jionusform > form > p:nth-child(5){
+    position: absolute;
+    top: 0;
+    right: 0;
 }
-#jionesform>p:nth-child(2)>span:nth-child(4){
-    display: none;
-    top: 260px;
-    left: 500px;
+.jionusform > form > p:nth-child(6){
+    position: absolute;
+    top: 100px;
+    right: 0;
 }
-
 #jionesbuttom {
     width: 900px;
     height: 50px;
+    padding: 0;
     background-color: #148EFF;
     font-size: 16px;
     color: #ffffff;
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 800px) {
+    aside{
+        min-width: 0;
+        border-top: solid #272a2d 71px;
+    }
+    aside > img {
+        min-width: 0;
+    }
+    .headertext {
+        height: 40px;
+        margin-top: -20px;
+    }
+    .headertext > p {
+        height: 20px;
+        line-height: 20px;
+        top: 37%;
+        font-size: 20px;
+        color: #ffffff;
+    }
+    .headertext > hgroup {
+        margin-top: 0;
+        font-size: 12px;
+        color: #999999;
+    }
+    .jionusform{
+        width: 100%;
+    }
+    .jionusform > form > p{
+        position: relative;
+        width: 400px;
+        margin: 0 auto 50px;
+    }
+    .jionusform > form > p:nth-child(5){
+        position: relative;
+    }
+    .jionusform > form > p:nth-child(6){
+        position: relative;
+        height: 250px;
+        top: 0;
+    }
+    .jionusform>p{
+        width: 400px;
+        margin: 0 auto;
+    }
+    #jionesbuttom {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .jionusform > form > p {
+        position: relative;
+        width: 80%;
+        margin: 0 auto 50px;
+    }
+    #jionesform>p>input,#jionesform>p>textarea{
+        width: 100%;
+    }
+    .jionusform>p {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #jionesbuttom{
+        width: 100%;
+    }
+    .jionusform {
+        padding: 40px 0;
+    }
+    footer > ul > li:nth-child(1),footer > ul > li:nth-child(2) {
+        display: none;
+    }
 }

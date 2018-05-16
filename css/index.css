@@ -263,11 +263,12 @@ aside>img{
     background-size: cover;
     color: #ffffff;
 }
+
 .newstime{
     width: 90px;
     height: 27px;
     padding: 0 5px;
-    margin: 69px auto 0;
+    margin: -40px auto 0;
     z-index: 99;
 }
 .newstime>span:nth-child(1){
@@ -286,6 +287,7 @@ aside>img{
 .newsbott{
     font-size: 14px;
     color: #ffffff;
+    word-wrap:normal ;
 }
 fieldset {
     margin:95px auto 0;
@@ -296,4 +298,109 @@ fieldset {
     color:#333;
     border:solid 1px rgba(102, 102, 102, 1);
 }
+@media only screen and (max-width: 800px) {
+    aside {
+        overflow: hidden;
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        border: none;
+    }
+    .banner{
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        padding: 76px 0 1px;
+        border: none;
+    }
+    aside > img {
+        width: 100%;
+        height: 100%;
+    }
+    .contenta{
+        clear: both;
+        position: relative;
+        padding: 0 0;
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        background: #272a2d;
+    }
+    .contentadiv {
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+        flex-basis: 40%;
+    }
 
+    .contentadiv > div {
+        position: static;
+        width: 40%;
+        height: 120px;
+        line-height: 120px;
+        padding: 0;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 16px;
+        font-family: "MicrosoftYaHei";
+        color: rgba(255, 255, 255, 1);
+        border: solid 1px rgba(102, 102, 102, 0.2);
+        cursor: pointer;
+    }
+    .contentadiv > div:nth-child(1),.contentadiv > div:nth-child(2),.contentadiv > div:nth-child(3),.contentadiv > div:nth-child(4),.contentadiv > div:nth-child(5),.contentadiv > div:nth-child(6){
+        padding: 0;
+        text-align: center;
+    }
+    .contentadiv > div > div {
+        display: none;
+    }
+    .contentbit{
+        position: relative;
+        width: 100%;
+        min-width: 0;
+    }
+    .bitimgcon {
+        min-width: 0;
+    }
+    .bitimgcon>div {
+        display: block;
+    }
+    .bitimg {
+        width: 80%;
+        min-width: 0;
+        height: auto;
+        margin: 0 auto;
+    }
+    .bittext {
+        float: none;
+        width: 80%;
+        min-width: 0;
+        margin: 50px auto 0;
+    }
+    .bittext > article {
+        width: 100%;
+        min-width: 0;
+        margin-top: 9%;
+        font-size: 14px;
+        color: #ffffff;
+    }
+    fieldset {
+        margin: 95px auto 0;
+        text-align: center;
+        width: 80%;
+        height: auto;
+        line-height: 1;
+        padding: 19px 10px 19px;
+        color: #333;
+        border: solid 1px rgba(102, 102, 102, 1);
+    }
+    .newstime{
+        margin-top: -30px;
+    }
+}
