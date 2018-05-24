@@ -1,0 +1,154 @@
+aside {
+    position: relative;
+    width: 100%;
+    min-width: 1024px;
+}
+aside>img{
+    width: 100%;
+    min-width: 1024px;
+}
+.headertext{
+    position: absolute;
+    width: auto;
+    height: 60px;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin-top: -30px;
+    text-align: center;
+}
+.headertext > p {
+    height: 39px;
+    line-height: 39px;
+    top: 37%;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.headertext > hgroup {
+    margin-top: 9px;
+    font-size: 14px;
+    color: #999999;
+}
+
+.articlea {
+    width: 69.5%;
+    min-width: 1024px;
+    height: auto;
+    margin: 0 auto 70px;
+}
+
+.artip {
+    margin: 66px 0;
+    font-size: 14px;
+    font-family: "MicrosoftYaHei";
+    color: #999999;
+}
+
+.artip > i {
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    background: url("../images/bit/jiantou.png") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.articlea>div{
+     width: 1024px;
+     height: auto;
+     margin: 0 auto;
+ }
+.articlea>div>div{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: auto;
+    vertical-align: top;
+}
+.articlea>div>div>span{
+    display: block;
+    margin: 0 auto;
+    font-size: 40px;
+    text-align: center;
+}
+.articlea>div>div:after{
+    content: '';
+    clear: both;
+}
+.jinbicolor{
+    color: #ed7113;
+}
+.xuqiucolor{
+    color: #0bc579;
+}
+.articlea>div>div>p{
+    margin-top: 30px;
+    color: #989898;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.articlea>div>div>div{
+    width: 220px;
+    height: 30px;
+    margin: 30px auto 100px;
+    line-height: 30px;
+    background-color: #1b8efd;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+}
+@media only screen and (max-width: 800px) {
+    aside {
+        min-width: 0;
+        border-top: solid #272a2d 71px;
+    }
+    aside>img {
+        min-width: 0;
+    }
+    .headertext {
+        height: 40px;
+        margin-top: -20px;
+    }
+    .headertext > p {
+        height: 20px;
+        line-height: 20px;
+        top: 37%;
+        font-size: 20px;
+        color: #ffffff;
+    }
+    .headertext > hgroup {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .articlea {
+        width: 80%;
+        min-width: 0;
+        height: auto;
+        margin: 0 auto 50px;
+    }
+    .artip {
+        margin: 40px 0;
+        font-size: 14px;
+        font-family: "MicrosoftYaHei";
+        color: #999999;
+    }
+    .articlea>div {
+        position: relative;
+        width: 100%;
+        min-width: 0;
+        height: auto;
+    }
+    .articlea>div>div{
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 500px){
+    .headertext > hgroup {
+        margin-top: 0;
+    }
+
+}

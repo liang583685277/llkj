@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'lhjicon';
-  src:  url('fonts/lhjicon.eot?gb1sp5');
-  src:  url('fonts/lhjicon.eot?gb1sp5#iefix') format('embedded-opentype'),
-    url('fonts/lhjicon.ttf?gb1sp5') format('truetype'),
-    url('fonts/lhjicon.woff?gb1sp5') format('woff'),
-    url('fonts/lhjicon.svg?gb1sp5#lhjicon') format('svg');
+  src:  url('fonts/lhjicon.eot?309n1x');
+  src:  url('fonts/lhjicon.eot?309n1x#iefix') format('embedded-opentype'),
+    url('fonts/lhjicon.ttf?309n1x') format('truetype'),
+    url('fonts/lhjicon.woff?309n1x') format('woff'),
+    url('fonts/lhjicon.svg?309n1x#lhjicon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-jinbi:before {
+  content: "\e904";
+}
+.icon-xuqiu:before {
+  content: "\e905";
+}
 .icon-gather:before {
   content: "\e900";
 }

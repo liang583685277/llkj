@@ -1,6 +1,6 @@
 $(document).ready(function () {
     //
-    const urlHref=["","./index/llgwbit.html","./index/rdcenter.html","./index/lleducation.html","./media/media.html",""];
+    const urlHref=["","./index/llgwbit.html","./index/rdcenter.html","./index/lleducation.html","./index/llmedia.html","./index/llcrowd.html"];
     $('.contentadiv>div').click(function () {
         console.log($(this).index());
         let index=($(this).index());
